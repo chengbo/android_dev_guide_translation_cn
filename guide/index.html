@@ -92,15 +92,19 @@
 </head>
 <body class="gc-documentation" itemscope itemtype="http://schema.org/Article">
 
+  <div id="translate-inprogress-message">
+      <p style="text-align:center">This is an in-progress translation. 如果你有兴趣一起翻译，可以到<a href="http://github.com/chengbo/android_dev_guide_translation_cn">github</a> push你的帮助。</p>
+  </div>
+
   <div id="header">
       <div id="headerLeft">
           <a href="../index.html" tabindex="-1"><img
               src="../assets/images/bg_logo.png" alt="Android Developers" /></a>
           <ul id="header-tabs" class="guide">
     
-	<li id="home-link"><a href="../offline.html">
+	<li id="home-link"><a href="../index.html">
 	
-		<span class="en">Home</span>
+		<span class="en">主页</span>
 		<span style="display:none" class="de">Startseite</span>
 		<span style="display:none" class="es"></span>
 		<span style="display:none" class="fr"></span>
@@ -115,7 +119,7 @@
 	</a></li>
 	<li id="guide-link"><a href="../guide/index.html" onClick="return loadLast('guide')">
 	
-		<span class="en">Dev Guide</span>
+		<span class="en">开发人员指南</span>
 		<span style="display:none" class="de">Handbuch</span>
 		<span style="display:none" class="es">Guía</span>
 		<span style="display:none" class="fr">Guide</span>
@@ -125,9 +129,9 @@
 		<span style="display:none" class="zh-TW">開發指南</span>
 	
 	</a></li>
-	<li id="reference-link"><a href="../reference/packages.html" onClick="return loadLast('reference')">
+	<li id="reference-link"><a href="http://developer.android.com/reference/packages.html" onClick="return loadLast('reference')">
 	
-		<span class="en">Reference</span>
+		<span class="en">参考</span>
 		<span style="display:none" class="de">Referenz</span>
 		<span style="display:none" class="es">Referencia</span>
 		<span style="display:none" class="fr">Référence</span>
@@ -137,9 +141,9 @@
 		<span style="display:none" class="zh-TW">參考資料</span>
 	
 	</a></li>
-	<li id="resources-link"><a href="../resources/index.html" onClick="return loadLast('resources')">
+	<li id="resources-link"><a href="http://developer.android.com/resources/index.html" onClick="return loadLast('resources')">
 	
-		<span class="en">Resources</span>
+		<span class="en">资源</span>
 		<span style="display:none" class="de"></span>
 		<span style="display:none" class="es"></span>
 		<span style="display:none" class="fr"></span>
@@ -149,9 +153,9 @@
 		<span style="display:none" class="zh-TW"></span>
 	
 	</a></li>
-	<li id="videos-link"><a href="../videos/index.html" onClick="return loadLast('videos')">
+	<li id="videos-link"><a href="http://developer.android.com/videos/index.html" onClick="return loadLast('videos')">
 	
-		<span class="en">Videos</span>
+		<span class="en">视频</span>
 		<span style="display:none" class="de"></span>
 		<span style="display:none" class="es"></span>
 		<span style="display:none" class="fr"></span>
@@ -163,7 +167,7 @@
 	</a></li>
 	<li><a href="http://android-developers.blogspot.com" onClick="return requestAppendHL(this.href)">
 	
-		<span class="en">Blog</span>
+		<span class="en">博客</span>
 		<span style="display:none" class="de"></span>
 		<span style="display:none" class="es"></span>
 		<span style="display:none" class="fr"></span>
@@ -182,7 +186,7 @@
       <div id="headerRight">
           <div id="headerLinks">
           &nbsp;&nbsp;
-          <a href="../design/index.html">Android Design</a>&nbsp;&nbsp;
+          <a href="http://developer.android.com/design/index.html">Android Design</a>&nbsp;&nbsp;
           <a href="http://www.android.com">Android.com</a>
           </div>
   <div id="search" >
@@ -230,7 +234,7 @@
 
   <li>
     <span class="heading">
-      <span class="en">Android Basics</span>
+      <span class="en">Android 基础知识</span>
       <span class="de" style="display:none">Einführung in Android</span>
       <span class="es" style="display:none">Información básica sobre Android</span>
       <span class="fr" style="display:none">Présentation d'Android</span>
@@ -241,7 +245,7 @@
     </span>
     <ul>
       <li><a href="../guide/basics/what-is-android.html">
-        <span class="en">What Is Android?</span>
+        <span class="en">Android 是什么？</span>
         <span class="de" style="display:none">Was ist Android?</span>
         <span class="es" style="display:none">¿Qué es Android?</span>
         <span class="fr" style="display:none">Qu'est-ce qu'Android&nbsp;?</span>
@@ -251,7 +255,7 @@
         <span class="zh-TW" style="display:none">什麼是 Android？</span>
           </a></li>
       <li><a href="../guide/topics/fundamentals.html">
-        <span class="en">Application Fundamentals</span>
+        <span class="en">应用程序基础</span>
         <span class="de" style="display:none">Anwendungsgrundlagen</span>
         <span class="es" style="display:none">Fundamentos de las aplicaciones</span>
         <span class="fr" style="display:none">Principes de base des applications</span>
@@ -269,7 +273,7 @@
 
   <li>
     <span class="heading">
-      <span class="en">Framework Topics</span>
+      <span class="en">框架主题</span>
       <span class="de" style="display:none">Framework-Themen</span>
       <span class="es" style="display:none">Temas sobre el framework</span>
       <span class="fr" style="display:none">Thèmes relatifs au framework</span>
@@ -732,7 +736,7 @@
 
   <li>
     <span class="heading">
-      <span class="en">Developing</span>
+      <span class="en">开发</span>
       <span class="de" style="display:none">Entwicklung</span>
       <span class="es" style="display:none">Desarrollo</span>
       <span class="fr" style="display:none">Développement</span>
@@ -927,7 +931,7 @@
 
   <li>
     <span class="heading">
-      <span class="en">Publishing</span>
+      <span class="en">发布</span>
       <span class="de" style="display:none">Veröffentlichung</span>
       <span class="es" style="display:none">Publicación</span>
       <span class="fr" style="display:none">Publication</span>
@@ -941,7 +945,7 @@
             <span class="en">Publishing Overview</span>
           </a></li>
       <li><a href="../guide/publishing/preparing.html">
-            <span class="en">Preparing for Release</span>
+            <span class="en">准备发布</span>
             <span class="de" style="display:none">Vorbereitung auf die Veröffentlichung</span>
             <span class="es" style="display:none">Publicación de aplicaciones</span>
             <span class="fr" style="display:none">Préparation à la publication</span>
@@ -951,7 +955,7 @@
             <span class="zh-TW" style="display:none">準備發佈</span>
           </a></li>
       <li><a href="../guide/publishing/app-signing.html">
-            <span class="en">Signing Your Applications</span>
+            <span class="en">应用程序签名</span>
             <span class="de" style="display:none">Signieren Ihrer Anwendungen</span>
             <span class="es" style="display:none">Firma de aplicaciones</span>
             <span class="fr" style="display:none">Attribution de votre signature <br />à vos
@@ -962,7 +966,7 @@ applications</span>
             <span class="zh-TW" style="display:none">簽署應用程式</span>
           </a></li>
       <li><a href="../guide/publishing/versioning.html">
-            <span class="en">Versioning Your Applications</span>
+            <span class="en">应用程序版本控制</span>
             <span class="de" style="display:none">Versionsverwaltung für Ihre <br
 />Anwendungen</span>
             <span class="es" style="display:none">Versiones de las aplicaciones</span>
@@ -978,7 +982,7 @@ applications</span>
 
   <li>
     <span class="heading">
-      <span class="en">Best Practices</span>
+      <span class="en">最佳实践</span>
       <span class="de" style="display:none">Bewährte Verfahren</span>
       <span class="es" style="display:none">Prácticas recomendadas</span>
       <span class="fr" style="display:none">Meilleures pratiques</span>
@@ -1106,7 +1110,7 @@ applications</span>
 
   <li>
     <span class="heading">
-      <span class="en">Appendix</span>
+      <span class="en">附录</span>
       <span class="de" style="display:none">Anhang</span>
       <span class="es" style="display:none">Apéndice</span>
       <span class="fr" style="display:none">Annexes</span>
@@ -1162,7 +1166,7 @@ applications</span>
     &nbsp;
     
   </span>
-<h1 itemprop="name">The Developer's Guide</h1>
+<h1 itemprop="name">开发人员指南</h1>
 </div>
 
   
@@ -1172,91 +1176,65 @@ applications</span>
 
 
     <div class="jd-descr" itemprop="articleBody">
-    <p>
-Welcome to the <i>Android Dev Guide</i>! The Dev Guide provides 
-a practical introduction to developing applications for Android and documentation about major
-platform features. It explores the concepts behind Android, the framework for 
-constructing an application, and the tools for developing, 
-testing, and publishing software for the platform.
-</p>
+    <p>欢迎来到<i>Android 开发人员指南</i>！这里提供了开发Android程序的实践说明以及主要平台特性的文档。这里还探索了Android背后的概念，构建程序的框架，开发、测试的工具，以及发布软件的一系列内容。</p>
 
 <p>
-The Dev Guide holds most of the documentation for the Android
-platform, except for reference material on the framework API.  
-For API specifications, go to the 
-<a href="../reference/packages.html">Reference</a>.
+开发人员指南保存着Android平台大部分的文档，但参考信息不在此列。若想查看
+API 说明文档，查看
+<a href="http://developer.android.com/reference/packages.html">参考</a>。
 </p>  
 
 <p>
-As you can see in the panel on the left, the Dev Guide is 
-divided into several sections:
+如同你在页面左边看到一样，开发人员指南被分成了几个部分：
 <p>
 
 <dl>
-<dt><b>Android Basics</b></dt>
-<dd>An initial orientation to Android &mdash; what it is, 
-what it offers, and how your application fits in.</dd>
+<dt><b>Android 基础知识</b></dt>
+<dd>一个Android的初始介绍 &mdash; Android是什么，它能干什么，你的程序是如何装配的。 </dd>
 
-<dt><b>Framework Topics</b></dt>
-<dd>Discussions of particular parts of the Android framework
-and API.  For an introduction to the framework, begin with
-<a href="../guide/topics/fundamentals.html">Application
-Fundamentals</a>.  Then explore other topics &mdash; from 
-designing a user interface and setting up resources to storing 
-data and using permissions &mdash; as needed.</dd>
+<dt><b>框架主题</b></dt>
+<dd>讨论Android框架和API特别的一些部分。关于框架的介绍，可以从
+<a href="../guide/topics/fundamentals.html">应用程序基础</a>看起。然后再浏览其它的主题。 &mdash; 从设计用户界面到存储资源数据，权限控制等&mdash; 一切随你所愿。</dd>
 
-<dt><b>Google Play Topics</b></dt>
-<dd>Documentation for topics that concern publishing and monetizing applications on Google Play,
-such as how to enforce licensing policies and implement in-app billing.</dd>
+<dt><b>Google Play 主题</b></dt>
+<dd>关于在Google Play上发布和收费的主题文档，比如如何实施许可证政策（licensing policies）以及实现应用程序内收费（in-app billing）。</dd>
 
-<dt><b>Developing</b></dt>
-<dd>Directions for using Android's development and debugging tools, 
-and for testing the results.</dd>
+<dt><b>开发</b></dt>
+<dd>如何使用Android的开发和调试工具，测试。</dd>
 
-<dt><b>Publishing</b></dt>
-<dd>Instructions on how to prepare your application for deployment
-and how to publish it when it's ready.</dd>
+<dt><b>发布</b></dt>
+<dd>如何为部署做准备，如何发布。</dd>
 
-<dt><b>Best Practices</b></dt> 
-<dd>Recommendations on preferred techniques for writing  
-applications that perform efficiently and work well for the
-user.</dd>
+<dt><b>最佳实践</b></dt> 
+<dd>如何写代码能让程序运行的更加高效的建议。</dd>
 
-<dt><b>Web Applications</b></dt> 
-<dd>Documentation about how to create web applications that work seamlessly on Android-powered
-devices and create Android applications that embed web-based content.</dd>
+<dt><b>网页应用程序</b></dt> 
+<dd>如何在Android设备上创建完美运行的网页应用程序，以及如何创建内嵌网页的Android程序。</dd>
 
-<dt><b>Appendix</b></dt>
-<dd>Reference information and specifications, as well as FAQs, 
-a glossary of terms, and other information.</dd>
+<dt><b>附录</b></dt>
+<dd>参考信息，规格说明，常见问题解答，术语表和其它信息。</dd>
 </dl>
 
 <p>
-The first step in programming for Android is downloading the SDK
-(software development kit).  For instructions and information, visit the <a
-href="../sdk/index.html">SDK</a> tab.
+开发Android的第一步就是下载SDK（软件开发包）。用法说明以及其它信息，查看<a
+href="http://developer.android.com/sdk/index.html">SDK</a> 选项卡。
 </p>
 
 <p>
-After you have the SDK, begin by looking through the Dev Guide.
-If you want to start by getting a quick look at some code, the 
-<a href="../resources/tutorials/hello-world.html">Hello World</a>
-tutorial walks you through a standard "Hello, World" application to introduce some basics of an
-Android application. The 
-<a href="../guide/topics/fundamentals.html">Application
-Fundamentals</a> document is a good place to start learning the basics about the application
-framework.
+下载并安装好SDK后，开始浏览开发人员指南。
+如果你想先看看一些代码做为开始，
+<a href="http://developer.android.com/resources/tutorials/hello-world.html">Hello World</a>
+教程可以让你通过“hello, world”这个程序员必学的程序了解一些Android程序的基础。 
+<a href="../guide/topics/fundamentals.html">应用程序基础</a> 文档是一个开始学习应用程序框架基础的好地方。
 </p>
 
 
 <p>
-For additional help, consider joining one or more of the Android 
-discussion groups.  Go to the 
-<a href="../resources/community-groups.html">Developer Forums</a> page
-for more information.
+如需更多的帮助，可以考虑加入一个或多个Android讨论组。查看
+<a href="http://developer.android.com/resources/community-groups.html">开发人员论坛</a> 页面获取更多信息。
 </p>
 
-<p>To return to this page later, just click the "Dev Guide" tab while any Dev Guide page is loaded. </p>
+<p>以后想回到这个页面，只需点击“开发人员指南”选项卡即可。</p>
     </div>
 
     
