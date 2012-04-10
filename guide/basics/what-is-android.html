@@ -70,7 +70,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico" />
-<title>What is Android? | Android Developers</title>
+<title>什么是 Android? | Android Developers</title>
 <link href="../../assets/android-developer-docs-devguide.css" rel="stylesheet" type="text/css" />
 <script src="../../assets/search_autocomplete.js" type="text/javascript"></script>
 <script src="../../assets/jquery-resizable.min.js" type="text/javascript"></script>
@@ -1162,7 +1162,7 @@ applications</span>
     &nbsp;
     
   </span>
-<h1 itemprop="name">What is Android?</h1>
+<h1 itemprop="name">什么是 Android?</h1>
 </div>
 
   
@@ -1172,144 +1172,92 @@ applications</span>
 
 
     <div class="jd-descr" itemprop="articleBody">
-    <p>Android is a software stack for mobile devices that includes an operating
-system, middleware and key applications. The <a
-href="http://developer.android.com/sdk/index.html">Android SDK</a>
-provides the tools and APIs necessary to begin developing applications on the
-Android platform using the Java programming language.</p>
+    <p>Android是一个用于移动设备的软件包，它包括操作系统，中间件和一些核心的应用程序。<a href="http://developer.android.com/sdk/index.html">Android SDK</a>提供了一些必要的工具和API，使用Java编程语言来开发Android平台的应用程序。</p>
 
-<h2>Features</h2>
+<h2>特性</h2>
 
 <ul>
-    <li><strong>Application framework</strong> enabling reuse and replacement
-    of components</li>
-    <li><strong>Dalvik virtual machine</strong> optimized for mobile
-        devices</li>
-    <li><strong>Integrated browser</strong> based on the open source <a
-    href="http://webkit.org/">WebKit</a> engine </li>
-    <li><strong>Optimized graphics</strong> powered by a custom 2D graphics library; 3D
-    graphics based on the OpenGL ES 1.0 specification (hardware acceleration
-    optional)</li>
-    <li><strong>SQLite</strong> for structured data storage</li>
-    <li><strong>Media support</strong> for common audio, video, and still
-    image formats (MPEG4, H.264, MP3, AAC, AMR, JPG, PNG,
+    <li><strong>应用程序框架</strong> 使组件可重用以及可替代</li>
+    <li><strong>Dalvik 虚拟机</strong> 已为移动设备优化过</li>
+    <li><strong>集成的浏览器</strong> 基于 <a
+    href="http://webkit.org/">WebKit</a> 开源引擎 </li>
+    <li><strong>优化过的图形</strong> 由定制的2D图形库驱动；基于OpenGL ES 1.0规格的3D图形 (可选的硬件加速)</li>
+    <li><strong>SQLite</strong> 结构化数据存储</li>
+    <li><strong>媒体支持</strong> 常见的音频，视频和图片 (MPEG4, H.264, MP3, AAC, AMR, JPG, PNG,
     GIF)</li>
-    <li><strong>GSM Telephony</strong> (hardware dependent)</li>
-    <li><strong>Bluetooth, EDGE, 3G, and WiFi</strong> (hardware dependent)</li>
-    <li><strong>Camera, GPS, compass, and accelerometer</strong> (hardware dependent)</li>
-    <li><strong>Rich development environment</strong> including a device
-    emulator, tools for debugging, memory and performance profiling, and a plugin for the Eclipse IDE</li>
+    <li><strong>GSM 电话</strong> (需硬件支持)</li>
+    <li><strong>蓝牙, EDGE, 3G 和 WiFi</strong> (需硬件支持)</li>
+    <li><strong>摄像头, GPS, 指南针 和 加速感应</strong> (需硬件支持)</li>
+    <li><strong>富开发环境</strong> 包括设备模拟器，调试工具，内存和性能分析，以及Eclipse插件</li>
 </ul>
 
 <a name="os_architecture" id="os_architecture"></a>
-<h2>Android Architecture</h2> 
+<h2>Android 架构</h2> 
 
-<p>The following diagram shows the major components of the Android operating
-system. Each section is described in more detail below.</p>
+<p>下图展示了Android操作系统的主要组件。接下来的页面中详细描述了其中的每一个部分。</p>
 
 <p><img src="../../images/system-architecture.jpg" alt="Android System Architecture" width="713" height="512"></p>
 
 <a name="applications" id="applications"></a>
-<h2>Applications</h2>
+<h2>应用程序</h2>
 
-<p>Android will ship with a set of core applications including an email
-client, SMS program, calendar, maps, browser, contacts, and
-others. All applications are written using the Java programming language.</p>
+<p>Android在分发时包括了一系列的核心应用程序，包括Email客户端，短消息程序，日历，地图，浏览器，联系人等等。他们都是用Java开发的。</p>
 
 <a name="application_framework" id="application_framework"></a>
-<h2>Application Framework</h2>
+<h2>应用程序框架</h2>
 
-<p>By providing an open development platform, Android
-offers developers the ability to build extremely rich and innovative
-applications. Developers are free to take advantage of the
-device hardware, access location information, run background services, set alarms,
-add notifications to the status bar, and much, much more. </p>
+<p>Android提供了一个开放的开发平台，所以开发者可以开发出非常丰富、有新意的应用程序。开发人员可以自由的使用设备硬件，获取位置信息，运行后台服务，设置闹铃，在状态栏中添加提醒，等等，等等。</p>
 
-<p>Developers have full access to the same framework APIs used by the core
-applications. The application architecture is designed to simplify the reuse
-of components; any application can publish its capabilities and any other
-application may then make use of those capabilities (subject to security
-constraints enforced by the framework). This same mechanism allows components
-to be replaced by the user.</p>
+<p>开发人员可以和核心应用程序一样，毫无限制的访问同一个框架API。为了可以很简单的复用组件，应用程序架构做了精心的设计；任何一个应用程序都可以把它的功能发布出来，让任何一个其它的程序使用（受限于框架的强制安全约束）。这个机制也同样允许用户替换组件。</p>
 
-<p>Underlying all applications is a set of services and systems, including:
+<p>所有的应用程序都以一系列的服务和系统组件为基础，包括：
 <ul>
-    <li>A rich and extensible set of <a
-    href="../../resources/tutorials/views/index.html">Views</a> that can be used to
-    build an application, including lists, grids, text boxes, buttons, and even
-    an embeddable web browser</li>
+    <li>一个丰富和可扩展的<a
+    href="http://developer.android.com/resources/tutorials/views/index.html">Views</a>集合，用于创建应用程序，他们包括列表、网格、文本框、按钮，甚至一个嵌入的网页浏览器。</li>
     <li><a href="../../guide/topics/providers/content-providers.html">Content
-    Providers</a> that enable applications to access data from other
-    applications (such as Contacts), or to share their own data</li> <li>A <a
+    Providers</a> 允许应用程序访问其它程序的数据（比如联系人信息），或者共享自己的数据。</li> <li><a
     href="../../guide/topics/resources/resources-i18n.html">Resource
-    Manager</a>, providing access to non-code resources such as localized
-    strings, graphics, and layout files</li>
-    <li>A <code><a href="../../reference/android/app/NotificationManager.html">Notification Manager</a></code> that enables
-    all applications to display custom alerts in the status bar</li>
-    <li>An <code><a href="../../reference/android/app/Activity.html">Activity Manager</a></code> that manages the
-    lifecycle of applications and provides a common navigation backstack</li>
+    Manager</a> 可以访问非代码(non-code)资源，比如本地化字符串，图片以及布局文件等</li>
+    <li><code><a href="http://developer.android.com/reference/android/app/NotificationManager.html">Notification Manager</a></code> 可以让所有的应用程序在状态栏中显示自定义的提示信息。</li>
+    <li><code><a href="http://developer.android.com/reference/android/app/Activity.html">Activity Manager</a></code> 管理应用程序生命周期，提供公共的导航回退栈(navigation backstack)</li>
 </ul>
 
-<p>For more details and a walkthrough of an application, see the <a
-href="../../resources/tutorials/notepad/index.html">Notepad Tutorial</a>.</p>
+<p>更多信息，以及如何编写一个应用程序，查看<a
+href="http://developer.android.com/resources/tutorials/notepad/index.html">Notepad 教程</a>.</p>
     
 <a name="libraries" id="libraries"></a>
-<h2>Libraries</h2>
+<h2>库</h2>
 
-<p>Android includes a set of C/C++ libraries used by various components of the
-Android system. These capabilities are exposed to developers through the
-Android application framework. Some of the core libraries are listed below:</p>
+<p>Android包括了一系列的C/C++库，Android系统的很多组件都在使用它们。 Android应用程序框架向开发人员开放了这些功能。以下是一些核心的库：</p>
 <ul>
-    <li><strong>System C library</strong> - a BSD-derived implementation of
-    the standard C system library (libc), tuned for embedded Linux-based
-    devices</li>
-    <li><strong>Media Libraries</strong> - based on PacketVideo's OpenCORE;
-    the libraries support playback and recording of many popular audio and video
-    formats, as well as static image files, including MPEG4, H.264, MP3, AAC,
-    AMR, JPG, and PNG</li>
-    <li><strong>Surface Manager</strong> - manages access to the display
-    subsystem and seamlessly composites 2D and 3D graphic layers from multiple
-    applications</li>
-    <li><strong>LibWebCore</strong> - a modern web browser engine which
-    powers both the Android browser and an embeddable web view</li>
-    <li><strong>SGL</strong> - the underlying 2D graphics
-    engine</li>
-    <li><strong>3D libraries</strong> - an implementation based on
-    OpenGL ES 1.0 APIs; the libraries use either hardware 3D acceleration
-    (where available) or the included, highly optimized 3D software
-    rasterizer</li>
-    <li><strong>FreeType</strong> - bitmap and vector font rendering</li>
-    <li><strong>SQLite</strong> - a powerful and lightweight relational
-    database engine available to all applications</li>
+    <li><strong>System C library</strong> - 源于BSD的标准C系统库(libc)，已为基于Linux的嵌入式设备做了改变。</li>
+    <li><strong>Media Libraries</strong> - 基于 PacketVideo's OpenCORE；
+    库支持重放以及录制流行的音频和视频格式，同样也支持静态图片文件，包括 MPEG4, H.264, MP3, AAC,
+    AMR, JPG 和 PNG</li>
+    <li><strong>Surface Manager</strong> - 管理访问显示子系统，无缝合成多个应用程序的2D和3D图形层</li>
+    <li><strong>LibWebCore</strong> - 现代的浏览器引擎，Android浏览器和嵌入式的web view都是由它构建的</li>
+    <li><strong>SGL</strong> - 底层的2D图形引擎</li>
+    <li><strong>3D libraries</strong> - 基于
+    OpenGL ES 1.0 APIs的实现; 库要么使用硬件3D减速（当硬件支持时），要么使用内置的，高度优化的3D软件光栅</li>
+    <li><strong>FreeType</strong> - 位图以及矢量字体渲染</li>
+    <li><strong>SQLite</strong> - 所有应用程序都可以使用的强大的轻量级关系数据库引擎</li>
 </ul>
 
 <a name="runtime" id="runtime"></a>
 
-<h2>Android Runtime</h2>
+<h2>Android 运行时</h2>
 
-<p>Android includes a set of core libraries that provides most of
-the functionality available in the core libraries of the Java programming
-language.</p>
+<p>Android包括了一系列的核心库，提供了Java核心库的大部分功能。</p>
 
-<p>Every Android application runs in its own process, with its own instance of
-the Dalvik virtual machine. Dalvik has been written so that a device can run
-multiple VMs efficiently. The Dalvik VM executes files in the Dalvik
-Executable (.dex) format which is optimized for minimal memory
-footprint. The VM is register-based, and runs classes
-compiled by a Java language compiler that have been transformed into the .dex
-format by the included &quot;dx&quot; tool.</p>
+<p>每一个Android应用程序都运行在它自己的、Dalvik虚拟机中的进程中。Dalvik设计成可以在设备上高效的运行多个虚拟机。Dalvik 虚拟机执行已为小内存需求优化过的.dex格式文件中的文件。虚拟机是基于注册的，并且运行由Java编译器编译的class文件，这些class文件已由SDK中提供的&quot;dx&quot;工具转换成了.dex格式。</p>
 
-<p>The Dalvik VM relies on the Linux kernel for underlying functionality such
-as threading and low-level memory management.</p>
+<p>Dalvik 虚拟机的基础功能，比如线程，底层内存管理等，依赖于Linux 内核。</p>
 
 <a name="kernel" id="kernel"></a>
 
-<h2>Linux Kernel</h2>
+<h2>Linux 内核</h2>
 
-<p>Android relies on Linux version 2.6 for core system services such as
-security, memory management, process management, network stack, and driver
-model. The kernel also acts as an abstraction layer between the hardware and
-the rest of the software stack.</p>
+<p>Android依赖 Linux 2.6做为核心系统服务，比如安全，内存管理，进程管理，网络栈以及驱动模型。内核同样也做为硬件以及软件之间的抽象层存在。</p>
 
     </div>
 
